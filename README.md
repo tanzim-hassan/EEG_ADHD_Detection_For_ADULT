@@ -2,7 +2,7 @@
 
 # 🧠 EEG-Based ADHD Detection for Adults
 
-**An end-to-end EEG signal processing and machine learning framework for adult ADHD detection, achieving 92.3% mean accuracy across 11 experimental tasks.**
+**An end-to-end EEG signal processing and machine learning framework for adult ADHD detection, across 11 experimental tasks.**
 
 [Overview](#-overview) • [Dataset](#-dataset) • [Pipeline](#-pipeline-architecture) • [Models](#-models) • [Results](#-results) • [Installation](#-installation) • [Usage](#-usage) • [XAI](#-explainability-xai)
 
@@ -16,7 +16,7 @@ This project implements a full-stack EEG-based ADHD classification system for ad
 
 **Key Highlights:**
 - 11 experimental EEG tasks per subject (eyes-open/closed, cognitive challenge, Omni Harmonic, etc.)
-- 4 participant groups: Female Control (FC), Male Control (MC), Female ADHD (FADHD), Male ADHD (MADHD)
+- 4 participant groups: (FC),(MC),(FADHD),(MADHD)
 - Binary classification: Control (0) vs ADHD (1)
 - 10-model ML sweep + 4 deep learning architectures
 - Ensemble soft-vote fusion achieving ~95%+ on 11-task subject-wise fusion
@@ -47,10 +47,10 @@ Each `.mat` file is a cell array of shape `11 tasks × N_subjects × N_samples �
 **Expected directory structure:**
 ```
 EEG/
-├── FC.mat       # Female Control
-├── MC.mat       # Male Control
-├── FADHD.mat    # Female ADHD
-└── MADHD.mat    # Male ADHD
+├── FC.mat      
+├── MC.mat       
+├── FADHD.mat    
+└── MADHD.mat    
 ```
 
 ---
